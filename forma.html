@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>preencha aqui</h1>
+    <form action="cadrasto.php" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome" required minlength="5" size="20" placeholder="Minimo 5 letras"></p>
+        <p><label for="isobrenome">sobrenome:</label>
+             <input type="password" name="sobrenome" id="isobrenome" required minlength="8" maxlength="12" size="5" placeholder="Minimo 8"></p>
+             <p>
+                <label for="iemail">email</label>
+                <input type="email" name="email" id="iemail" required placeholder="Ex:carlosilva@gmail.com">
+             </p>
+             <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required placeholder="(xx)x-xxxxxxxxx">
+             </p>
+            </fieldset>
+            
+             <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5.5" required>
+             </p>
+             <p>
+                <label for="idia">Data</label>
+                <input type="date" name="dia" id="idia" value="2024-09-23">
+             </p>
+             <p>
+                <label for="ihora">Hora</label>
+                <input type="time" name="hora" id="ihora" required>
+             </p>
+            
+        <p><input type="submit" value="Enviar"></p>
+        <p><input type="reset" value="Limpar"></p>
+    </form>
+</body>
+</html>
